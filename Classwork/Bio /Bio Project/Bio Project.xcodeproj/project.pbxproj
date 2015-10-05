@@ -13,6 +13,7 @@
 		BF4CA1481BBCB07B00BC5C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4CA1471BBCB07B00BC5C38 /* Assets.xcassets */; };
 		BF4CA14B1BBCB07B00BC5C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4CA1491BBCB07B00BC5C38 /* LaunchScreen.storyboard */; };
 		BF4CA1531BBCB52B00BC5C38 /* 17e1e02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4CA1521BBCB52B00BC5C38 /* 17e1e02.jpg */; };
+		BFFDB6501BC259C9007C316D /* 17e1e02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFFDB64F1BC259C9007C316D /* 17e1e02.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BF4CA14C1BBCB07B00BC5C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF4CA1521BBCB52B00BC5C38 /* 17e1e02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 17e1e02.jpg; path = ../17e1e02.jpg; sourceTree = "<group>"; };
 		BF4CA1551BBCB9EE00BC5C38 /* BioPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BioPlayground.playground; sourceTree = "<group>"; };
+		BFFDB64F1BC259C9007C316D /* 17e1e02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17e1e02.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				BF4CA1401BBCB07B00BC5C38 /* AppDelegate.swift */,
 				BF4CA1421BBCB07B00BC5C38 /* ViewController.swift */,
 				BF4CA1441BBCB07B00BC5C38 /* Main.storyboard */,
+				BF4CA1521BBCB52B00BC5C38 /* 17e1e02.jpg */,
 				BF4CA1471BBCB07B00BC5C38 /* Assets.xcassets */,
 				BF4CA1491BBCB07B00BC5C38 /* LaunchScreen.storyboard */,
 				BF4CA14C1BBCB07B00BC5C38 /* Info.plist */,
@@ -72,7 +75,7 @@
 		BF4CA1541BBCB7F800BC5C38 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BF4CA1521BBCB52B00BC5C38 /* 17e1e02.jpg */,
+				BFFDB64F1BC259C9007C316D /* 17e1e02.jpg */,
 			);
 			name = Images;
 			path = "Bio Project";
@@ -137,6 +140,7 @@
 			files = (
 				BF4CA14B1BBCB07B00BC5C38 /* LaunchScreen.storyboard in Resources */,
 				BF4CA1481BBCB07B00BC5C38 /* Assets.xcassets in Resources */,
+				BFFDB6501BC259C9007C316D /* 17e1e02.jpg in Resources */,
 				BF4CA1461BBCB07B00BC5C38 /* Main.storyboard in Resources */,
 				BF4CA1531BBCB52B00BC5C38 /* 17e1e02.jpg in Resources */,
 			);
@@ -298,6 +302,7 @@
 				BF4CA1511BBCB07B00BC5C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
