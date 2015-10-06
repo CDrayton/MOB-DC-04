@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3wQ-wx-3cM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="N1m-1O-hn7">
+            <objects>
+                <navigationController id="3wQ-wx-3cM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="88o-34-H8F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u36-tc-eIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slF-vC-qFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-943" y="344"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-Wq-LWn">
+                                <rect key="frame" x="62" y="241" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chY-hV-xFd">
+                                <rect key="frame" x="62" y="328" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nt-ki-p0m">
+                                <rect key="frame" x="85" y="415" width="46" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nR7-pa-ZdH" kind="show" id="M5c-ko-PkO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSa-ZH-4j8">
+                                <rect key="frame" x="125" y="163" width="78" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="705-q6-Atv">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="yUb-wX-Cfx">
+                                        <barButtonItem key="rightBarButtonItem" id="IIX-YM-RG8"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.94509810209274292" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UGL-PE-OCp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="344"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n2p-cm-7ou">
+            <objects>
+                <viewController id="gOY-Ng-05N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rn5-DX-tyl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Es2-MC-rfK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pIZ-fp-IQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="17e1e02.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-KO-O1T">
+                                <rect key="frame" x="71" y="158" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jSX-hN-rdM">
+                                <rect key="frame" x="20" y="282" width="362" height="434"/>
+                                <string key="text">Caeden C. Drayton has been involved in practice of law since 2008 and directs his practice to all aspects of intellectual property with a special focus in patent prosecution and intellectual property litigation. Mr. Drayton focuses his patent prosecution practice in computer software, hardware, and business methods. Mr. Drayton directs his intellectual property litigation practice to include patent, trademark, copyright and trade dress litigations.
+
+Prior to joining Cahn &amp; Samuels in 2014, Mr. Drayton worked in private practice at a number of large firms in the areas of litigation and patent prosecution.
+
+Mr. Drayton received his Juris Doctor from Emory University School of Law and his Bachelor of Science in Computer Information Science, magna cum laude, from Florida A&amp;M University.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7q-YI-1bY">
+                                <rect key="frame" x="145" y="123" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4k-h0-fv1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Caeden's First App" id="cda-aE-b1a">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="Goals" id="24m-QK-5fU">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <segue destination="89N-GZ-zPt" kind="show" id="yEo-9F-wef"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Home" id="9Ep-yv-IfD">
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <segue destination="nR7-pa-ZdH" kind="show" id="eyQ-YL-U3u"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.22352942819999999" blue="0.1098039299" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mc9-O9-OYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="-148"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aaA-2E-kkG">
+            <objects>
+                <viewController id="nR7-pa-ZdH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qer-se-upF"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGV-WB-lfr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="buc-pf-gHW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="17e1e02.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UZd-hD-KkH">
+                                <rect key="frame" x="140" y="190" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFd-AU-ZCM">
+                                <rect key="frame" x="170" y="137" width="30" height="30"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <segue destination="gOY-Ng-05N" kind="show" id="tMe-Dz-iGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="187-5f-fMe">
+                                <rect key="frame" x="305" y="137" width="39" height="30"/>
+                                <state key="normal" title="Goals"/>
+                                <connections>
+                                    <segue destination="89N-GZ-zPt" kind="show" id="DZZ-pO-aIw"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzI-2t-FJe">
+                                <rect key="frame" x="0.0" y="59" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Caeden's First App" id="zAM-zC-jdY"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.9450981021" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="bFd-AU-ZCM" firstAttribute="leading" secondItem="buc-pf-gHW" secondAttribute="leadingMargin" constant="150" id="3M3-gl-gXB"/>
+                            <constraint firstItem="UZd-hD-KkH" firstAttribute="leading" secondItem="buc-pf-gHW" secondAttribute="leadingMargin" constant="120" id="cOS-xV-iwO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UZd-hD-KkH" secondAttribute="trailing" constant="200" id="yxz-W9-3s1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob4-LQ-Jfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="349"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7IA-Ek-vBP">
+            <objects>
+                <viewController id="89N-GZ-zPt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nSi-o0-XbB"/>
+                        <viewControllerLayoutGuide type="bottom" id="0NW-Xq-UoL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tIq-aX-Pzp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-bM-VNg">
+                                <rect key="frame" x="50" y="182" width="310" height="267"/>
+                                <string key="text">I expect to be directed in how to learn and develop my own apps. I expect to be given a thorough understanding of the Swift programming language and how to use the language to create functioning, interactive mobile applications</string>
+                                <color key="textColor" red="1" green="0.22352942819999999" blue="0.1098039299" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10-Common-Travel-Mistakes-You-Can-Avoid.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-MV-AbV">
+                                <rect key="frame" x="66" y="452" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63e-Vj-NL4">
+                                <rect key="frame" x="138" y="174" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-CW-54P">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Caeden's First App" id="7vP-wg-uMm">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="Info" id="KV5-J2-vvp">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <segue destination="gOY-Ng-05N" kind="show" id="DnC-MZ-XHP"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Home" id="SH3-d4-dzG">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <segue destination="nR7-pa-ZdH" kind="show" id="Bh1-gj-Va7"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" id="ArH-ez-J3k">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254908084869385" green="0.9960784912109375" blue="0.32549020648002625" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmt-hp-1k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="602"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10-Common-Travel-Mistakes-You-Can-Avoid.jpg" width="1920" height="1080"/>
+        <image name="17e1e02.jpg" width="400" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DnC-MZ-XHP"/>
+        <segue reference="yEo-9F-wef"/>
+        <segue reference="eyQ-YL-U3u"/>
+    </inferredMetricsTieBreakers>
+</document>
