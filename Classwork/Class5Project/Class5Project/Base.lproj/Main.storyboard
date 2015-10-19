@@ -91,6 +91,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ff7-6C-NA9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bWf-nb-sX6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

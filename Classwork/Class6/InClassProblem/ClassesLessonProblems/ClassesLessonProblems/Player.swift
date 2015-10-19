@@ -9,5 +9,10 @@
 import Foundation
 
 struct Player {
+    var name: String
+    var age : Int
+    var gender : String
+    var weight: Int
+    var height: Int
     
 }
