@@ -10,4 +10,19 @@ import Foundation
 
 class Player {
     
+    
+        var playerOneTotal: Int  = pCard1 + pCard2
+        
+        if playerOneTotal > 21 {
+        print("Game Over, You Lose!")
+        }else if age <= {
+        playerOneTotal = pCard1 + pCard2
+        
+        }
+    }
+    
+    func CardGenerator {
+
+    
+    
 }

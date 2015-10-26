@@ -17,6 +17,8 @@ protocol BlackJack {
 class CardGame: BlackJack {
     func deal() {
         
+        
+        
     }
     
     func firstHand() {

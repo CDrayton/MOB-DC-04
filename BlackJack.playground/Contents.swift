@@ -25,60 +25,65 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var redBox: UIView!
-  
+    
     @IBOutlet weak var p1Score: UILabel!
     @IBOutlet weak var p2Score: UILabel!
     @IBOutlet weak var p1Cards: UILabel!
     @IBOutlet weak var p2Cards: UILabel!
     
+
     
     var cardArray: Array = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    //cardArray.count
     
-  
-   
+
+    
     var newArray : [Int] = []
+    //var playerCards = [Int]()
     
     func randomInt(min: Int, max: Int) -> Int {
         
         cardArray.count
+        print(cardArray.count)
         let newCard = min + Int(arc4random_uniform(UInt32(max - min + 1)))
         let newCardValue = cardArray[newCard]
-       // newArray.append(newCardValue)
+        // newArray.append(newCardValue)
         
         cardArray.removeAtIndex(newCard)
         self.p1Score.text = String(newCardValue)
+        print(self.p1Score.text)
         
         return newCard
     }
     
     
-   // func removeCardFromDeck (int){
-        
+    // func removeCardFromDeck (int){
     
-     //   newArray.append(array.remove(int))
+    
+    //   newArray.append(array.remove(int))
     //    self.p1Cards.text =
-//    }
-
+    //    }
     
     
-    @IBAction func doubleTap(sender: AnyObject) {
-        randomInt(min: Int, max: <#T##Int#>)
+    
+  /*  @IBAction func doubleTap(sender: AnyObject) {
+        randomInt(min: Int, max: Int)
     }
-
+  */
     
     @IBAction func swipeRight(sender: AnyObject) {
     }
-
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     
-
-  
+    
+    
+    
 }
 
-    
+
