@@ -11,18 +11,18 @@ import Foundation
 class Player {
     
     
-        var playerOneTotal: Int  = pCard1 + pCard2
+    func randomInt(min: Int, max: Int) -> Int {
         
-        if playerOneTotal > 21 {
-        print("Game Over, You Lose!")
-        }else if age <= {
-        playerOneTotal = pCard1 + pCard2
+        var newCardValue: [Int] = []
+        //newArray1.append(newCardValue)
         
-        }
+        cardArray.removeAtIndex(newCard)
+        self.p1Score.text = String(newCardValue)
+        */
+        return newCard
     }
     
-    func CardGenerator {
-
     
+        
+    }
     
-}

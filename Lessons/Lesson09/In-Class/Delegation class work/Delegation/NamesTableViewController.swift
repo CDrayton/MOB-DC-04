@@ -8,7 +8,9 @@
 
 import UIKit
 
-class NamesTableViewController: UITableViewController {
+class NamesTableViewController: UITableViewController, SaveNameToTable {
+
+//class FirstViewController: UIViewController, UpdateUsernameDelegate {
     
     // Keep track of all names in this array
     var names = [String]()
@@ -19,7 +21,8 @@ class NamesTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("namecell", forIndexPath: indexPath) 
+        let cell = tableView.dequeueReusableCellWithIdentifier("namecell", forIndexPath: indexPath)
+        
         
         // Fill out the user textLabel of the row by grabbing the student's name
         let studentName = names[indexPath.row]
@@ -31,5 +34,38 @@ class NamesTableViewController: UITableViewController {
     func updateNames(name: String) {
         
     }
+    
+    func addName(name:String) {
+        
+        //add code
+        print(name)
+        self.names.append(name)
+        self.tableView.reloadData()
+        
+    }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showAddName" {
+            let destinationVC = segue.destinationViewController as! AddViewController
+            destinationVC.delegate = self
+        }
+    }
+
+    
+    
+    
+   /* @IBAction func SaveName(sender: AnyObject) {
+        
+        var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddViewController") as! AddViewController
+        secondVC.delegate = self
+        self.presentViewController(secondVC, animated: true, completion: nil)
+     */
+/*   var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("secondVC") as! SecondViewController
+secondVC.delegate = self
+self.presentViewController(secondVC, animated: true, completion: nil)
+
+}*/
+    
+
+    
 }

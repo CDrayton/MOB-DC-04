@@ -8,9 +8,21 @@
 
 import UIKit
 
+protocol SaveNameToTable {
+    
+    func addName(name:String)
+    
+ 
+}
+/*protocol UpdateUsernameDelegate {
+    func updateUsername(name: String)
+}*/
+
 class AddViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
 
+    var delegate: SaveNameToTable?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,11 +42,17 @@ class AddViewController: UIViewController {
         nameField.resignFirstResponder()
     }
     
+    
+    
+    
     func screenTapped() {
         view.endEditing(true)
     }
     
     @IBAction func save(sender: UIButton) {
+        
+        self.delegate!.addName(self.nameField.text!)
+
         dismiss()
     }
     
@@ -46,5 +64,7 @@ class AddViewController: UIViewController {
         // The users decided to go back, dismiss this modal
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
 
 }

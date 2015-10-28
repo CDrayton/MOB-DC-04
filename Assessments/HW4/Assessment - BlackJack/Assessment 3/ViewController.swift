@@ -25,25 +25,26 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var redBox: UIView!
-  
     @IBOutlet weak var p1Score: UILabel!
     @IBOutlet weak var p2Score: UILabel!
     @IBOutlet weak var p1Cards: UILabel!
     @IBOutlet weak var p2Cards: UILabel!
-    
+    @IBOutlet weak var winnerLabel: UILabel!
     
     var cardArray: Array = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
     
   
+    
    
-    var newArray : [Int] = []
+    var newArray1 : [Int] = []
+    var newArray2 : [Int] = []
     
     func randomInt(min: Int, max: Int) -> Int {
         
         cardArray.count
-        let newCard = min + Int(arc4random_uniform(UInt32(max - min + 1)))
-        let newCardValue = cardArray[newCard]
-       // newArray.append(newCardValue)
+        var newCard = min + Int(arc4random_uniform(UInt32(max - min + 1)))
+        var newCardValue = cardArray[newCard]
+        newArray1.append(newCardValue)
         
         cardArray.removeAtIndex(newCard)
         self.p1Score.text = String(newCardValue)
@@ -51,24 +52,47 @@ class ViewController: UIViewController {
         return newCard
     }
     
-    
-   // func removeCardFromDeck (int){
-        
-    
-     //   newArray.append(array.remove(int))
-    //    self.p1Cards.text =
-//    }
+ 
 
     
-    
     @IBAction func doubleTap(sender: AnyObject) {
-        randomInt(min: Int, max: <#T##Int#>)
+        randomInt(0, max: 51)
+        
     }
 
     
     @IBAction func swipeRight(sender: AnyObject) {
+    
+        func randomInt2(min: Int, max: Int) -> Int {
+            
+            /*cardArray.count
+            var newCard2 = min + Int(arc4random_uniform(UInt32(max - min + 1)))
+            var newCardValue2 = cardArray[newCard2]
+            newArray2.append(newCardValue2)
+            cardArray.removeAtIndex(newCard2)
+            self.p2Score.text = String(newCardValue2)
+            return newCard2
+            */
+        }
+      
+        /*func CompareCards() -> String {
+            If newCard <=  21 && newcard2 >= 21
+          self.winnerLabel.text = "Player 1 Wins!"
+            else if newCard2 <= 21 && newCard > 21{
+                self.winnerLabel.text = "Player 2 Wins!"
+            } else {
+                self.winnerLabel.text = "It's a Tie!"
+            }
+                
+        }*/
+        
+            
+    }
+    
+        }
     }
 
+  
     
     
     
