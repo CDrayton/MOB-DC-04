@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersistenceExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FSE-K8-nkX">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gKf-ZJ-hys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gKf-ZJ-hys"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="115" y="191" width="171" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="gKf-ZJ-hys"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID9-nt-xcc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="271" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ru-Sc-ykj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlr-6C-ugs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="354" width="42" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qlr-6C-ugs" firstAttribute="top" secondItem="ID9-nt-xcc" secondAttribute="bottom" constant="53" id="7El-Jf-LKc"/>
+                            <constraint firstItem="ID9-nt-xcc" firstAttribute="top" secondItem="FSE-K8-nkX" secondAttribute="bottom" constant="50" id="ENI-xx-unz"/>
+                            <constraint firstItem="FSE-K8-nkX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="171" id="ElH-1d-1gB"/>
+                            <constraint firstItem="ID9-nt-xcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HpL-Ew-XJZ"/>
+                            <constraint firstItem="FSE-K8-nkX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jqh-0B-yD3"/>
+                            <constraint firstItem="ID9-nt-xcc" firstAttribute="trailing" secondItem="FSE-K8-nkX" secondAttribute="trailing" id="RHh-sr-Rp4"/>
+                            <constraint firstItem="qlr-6C-ugs" firstAttribute="centerX" secondItem="ID9-nt-xcc" secondAttribute="centerX" id="aHg-wt-nee"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FSE-K8-nkX"/>
+                                <exclude reference="ID9-nt-xcc"/>
+                                <exclude reference="qlr-6C-ugs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ElH-1d-1gB"/>
+                                <exclude reference="Jqh-0B-yD3"/>
+                                <exclude reference="ENI-xx-unz"/>
+                                <exclude reference="HpL-Ew-XJZ"/>
+                                <exclude reference="RHh-sr-Rp4"/>
+                                <exclude reference="7El-Jf-LKc"/>
+                                <exclude reference="aHg-wt-nee"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FSE-K8-nkX"/>
+                                <include reference="ID9-nt-xcc"/>
+                                <include reference="qlr-6C-ugs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ElH-1d-1gB"/>
+                                <include reference="Jqh-0B-yD3"/>
+                                <include reference="ENI-xx-unz"/>
+                                <include reference="HpL-Ew-XJZ"/>
+                                <include reference="RHh-sr-Rp4"/>
+                                <include reference="7El-Jf-LKc"/>
+                                <include reference="aHg-wt-nee"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="displayData" destination="qlr-6C-ugs" id="b5X-zZ-ZlK"/>
+                        <outlet property="userInput" destination="FSE-K8-nkX" id="JTy-r3-1LA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="314.25"/>
+        </scene>
+    </scenes>
+</document>
