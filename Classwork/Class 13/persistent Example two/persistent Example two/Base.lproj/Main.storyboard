@@ -131,12 +131,12 @@
                                 <exclude reference="mAM-oW-Nhq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="xqX-Eq-0LM"/>
                                 <exclude reference="BDC-8k-Ghg"/>
                                 <exclude reference="jlU-Ok-fAJ"/>
+                                <exclude reference="ni7-Ni-2eF"/>
                                 <exclude reference="VuL-Us-RsS"/>
                                 <exclude reference="eGb-eC-iiB"/>
-                                <exclude reference="xqX-Eq-0LM"/>
-                                <exclude reference="ni7-Ni-2eF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -149,12 +149,12 @@
                                 <include reference="mAM-oW-Nhq"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="xqX-Eq-0LM"/>
                                 <include reference="BDC-8k-Ghg"/>
                                 <include reference="jlU-Ok-fAJ"/>
+                                <include reference="ni7-Ni-2eF"/>
                                 <include reference="VuL-Us-RsS"/>
                                 <include reference="eGb-eC-iiB"/>
-                                <include reference="xqX-Eq-0LM"/>
-                                <include reference="ni7-Ni-2eF"/>
                             </mask>
                         </variation>
                     </view>
